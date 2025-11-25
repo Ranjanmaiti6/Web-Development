@@ -1,0 +1,49 @@
+/*  id baised selection is done by #     */
+#first{
+    background-color: aquamarine;
+}
+/*  class based selection   */
+/* class can be repet but id cant */
+.firstClass{
+    background-color: rgba(100, 145, 132, 0.81);        /*  R, G, B, A=alpha for transparency */
+}
+
+/* group baised selection */
+h1 , .firstClass{
+    text-align: center;
+}
+h2{
+    background-color: hsl(110, 50%, 50%, 0.6);
+}
+
+/* now about font */
+h1{
+    font-size: 50px;
+}
+/* em is multiplication of parent size property */
+li{
+    font-size: 1em;
+}
+/* rem is for root ki size here main html tag */
+li{
+    font-size: 1rem;
+    /* font family works form first font if first not suppoet then sec then if not third */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+h2{
+    /* visible screen wirth ki size ki 1persent is 1vw */
+    font-size: 5vw;
+    /* vh for hight */
+
+    /* for use external fonts eg. google font */
+
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+
+}
+/* percent is use for direct parent ki size ki percent */

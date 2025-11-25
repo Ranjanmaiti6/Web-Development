@@ -1,0 +1,26 @@
+h1{
+    background-color: orange;
+    height: 200px;
+    width: 300px;
+    border-width: 5px;
+    border-style: solid;
+
+    /* or */
+    border: solid black 5px;
+
+    padding: 10px;   /*up down both side 10px */
+    margin: 10px;  /* all side of box */
+
+    margin: 10px 20px 30px 40px;
+    border-radius: 40px;
+}
+h2{
+    background-color: pink;
+    border: 2px solid blue;   
+}
+p{
+    background-color: aquamarine;
+    padding: 20px;
+    border-top:  5px blueviolet solid;
+    margin: 10px;
+}

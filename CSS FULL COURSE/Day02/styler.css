@@ -1,0 +1,29 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+span{
+    color: blue;
+    display: block;
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 40px;
+}
+h1{
+    background-color: aqua;
+    /* display: inline; */
+    height: 300px;
+    width: 300px;
+    border: 8px solid orange;
+    padding: 20px;
+    box-sizing: content-box;
+}
+h2{
+    background-color: antiquewhite;
+    /* display: inline; */
+    height: 300px;
+    width: 300px;
+        border: 8px solid orange;
+    padding: 20px;
+    box-sizing: border-box;
+}

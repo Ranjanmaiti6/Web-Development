@@ -1,0 +1,44 @@
+#container{
+    background-color: antiquewhite;
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* flex direction: is the main axis */
+    /* justify content works on main axis or flex direction */
+    /* align items works on cross axis */
+
+    /* flex-wrap: wrap; */
+
+    /*flex wrap is used for make responsive items will go down insted of scring */
+    gap: 10px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+} 
+.first {
+    background-color: orange;
+    flex-grow: 1;
+    /* flex grow will work is there is a space it will extend to fill gap */
+    /* 1,2 means: by default is 100% and give 1 part or 2 part */
+}
+.second{
+    background-color: palevioletred;
+    flex-grow: 2;
+    flex-shrink: 4;
+    /* felx shirnk 4 means it will srink 4 times faster then other by default is 1 */
+    flex-basis: 300px;
+    /* flex basis means space overwrite over main axis */
+}
+.third{
+    background-color: yellow;
+    flex-grow: 3;
+    align-self: flex-start;
+    /* its means it will not obey the main rule here is justify-content: center; */
+}
+.forth{
+    background-color: greenyellow;
+}
