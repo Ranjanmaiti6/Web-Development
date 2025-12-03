@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ranjan</title>
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:system-ui, sans-serif;
+  }
+
+  .container{
+    width: 500px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 15px blue;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden; /* clip the sliding text */
+  }
+
+  .box{
+    animation-name: moving;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    margin-bottom: 12px;
+    white-space: nowrap; /* prevents wrapping */
+  }
+
+  .box p{
+    display:inline-block;   /* margin-left on inline-block behaves predictably */
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  @keyframes moving {
+    from { margin-left: 100%; } /* <-- corrected 'from' */
+    to   { margin-left: -100%; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"><p>This is Ranjan Maiti — how may I help you?</p></div>
+  </div>
+</body>
+</html>
