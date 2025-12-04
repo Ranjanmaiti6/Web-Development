@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(28, 27, 27);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding-top:  200px;
+            padding-bottom: 50px;
+
+        }
+        p{
+            color: rgb(12, 11, 11);
+            margin: 20px;
+        }
+        h2{
+            color: rgb(176, 109, 239);
+            font-size: 40px;
+        }
+
+        .yes{
+            background-color: rgb(90, 250, 16);
+            text-align: center;
+            height: 30px;
+            width:70px;
+            border-radius: 10px;
+        }
+        .no{
+            background-color: rgb(250, 16, 133);
+            text-align: center;
+            height: 30px;
+            width:70px;
+            border-radius: 10px;
+        }
+        .ans{
+            transition-property: background-color width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+        .yes:hover{
+            background-color: rgb(194, 254, 166);
+            cursor: pointer;
+            width: 75px;
+            height: 35px;
+        }
+        
+        .no{
+            transition-property: margin width height;
+        }
+        .no:hover{
+            margin-top: 200px;
+            margin-left: 60px;
+            cursor: pointer;
+            width: 75px;
+            height: 35px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="question">
+            <h2>Do You Love Me?</h2>
+            <div class="ans">
+                <div class="yes">
+                    <p>YES</p>
+                </div>
+                <div class="no">
+                    <p>NO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

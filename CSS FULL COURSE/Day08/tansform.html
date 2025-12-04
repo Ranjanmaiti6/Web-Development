@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0x;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            /* perspective is used for showing 3D movement in Z direction means its allow z axis movement or changes size acordingly */
+            perspective: 800px;
+
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+             background-color: aliceblue;
+
+            transition-property: all;
+            transition-duration: 1s;    
+            cursor: pointer;
+
+            transform: skewX(-30deg);
+
+        }
+        .box:hover{
+        /*    
+            background-color: blueviolet;
+            height: 300px;
+            width: 300px;   */
+            transform: scaleY(2);
+        /*    transform use to give animaition like size changeing without distureb other sides boxes
+        */
+            transform: translateX(200px);
+            transform: rotate(195deg);
+            transform: translateZ(350px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box" style="background-color: rgb(239, 152, 152);"></div>
+    </div>
+</body>
+</html>
