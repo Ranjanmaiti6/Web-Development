@@ -103,9 +103,6 @@
     <div class="message" id="msg"></div>
 </div>
 
-<audio id="loveSound">
-    <source src="https://www.soundjay.com/buttons/sounds/button-3.mp3">
-</audio>
 
 <script>
     const noBtn = document.getElementById("no");
@@ -115,13 +112,6 @@
     const question = document.getElementById("question");
     const sound = document.getElementById("loveSound");
 
-    const teasingTexts = [
-        "Nice try 😏",
-        "You can’t escape love 😂",
-        "Still trying? 😜",
-        "Just click YES already 💕",
-        "No is disabled 😎"
-    ];
 
     function moveNoButton() {
         const boxRect = box.getBoundingClientRect();
