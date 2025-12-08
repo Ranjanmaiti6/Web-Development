@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+.contianer{
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    padding-top: 40px;
+    margin: auto;
+
+}
+
+.sidebar{
+    height: 90vh;
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    border: 1px solid #3a3a3a;
+}
+
+.mianContent{
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    border: 1px solid #3a3a3a;
+}
+.profile img{
+    height: 130px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    columns: #e0e0e0
+    ;
+}
