@@ -3,7 +3,7 @@ let age = 19;
 age = 18;
 console.log(name , age);
 
-const acc = 2000;   //cant change
+const acc = 2000;   //can't change
 console.log(acc);
 
 //old method. can take same variable multi time
