@@ -17,7 +17,7 @@ buttons.forEach((button) => {
                 input.value = "Error";
             }
         }
-        else {
+        else { 
             input.value += value;
         }
     });
