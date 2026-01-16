@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Astrology Predector</h1>
+        <form id="astroForm">
+            
+            <label for="name">First Name: </label><br>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="surname">Last Name: </label><br>
+            <input type="text" id="surname" name="surname" required>
+            <br><br>
+            <label for="day">DOB (Day): </label><br>
+            <input type="number" id="day" name="day" min="1" required>
+            <br><br>
+            <label for="month">DOB (Month): </label><br>
+            <input type="number" id="month" name="month" min="1" required>
+            <br><br>
+            <label for="year">DOB (Year): </label><br>
+            <input type="number" id="year" name="year" min="4" required>
+
+            <br><br>
+            <button type="submit">Get Results</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
