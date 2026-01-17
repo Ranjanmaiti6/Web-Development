@@ -22,4 +22,9 @@ form.addEventListener('submit' , (e)=>{
             finalScore++;
         }
     }
+
+
+    document.getElementById("out").textContent = `Your Score is: ${finalScore} out of 10`;
+
+    form.reset();
 })
